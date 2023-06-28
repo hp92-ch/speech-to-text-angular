@@ -1,0 +1,7 @@
+<div>
+  <button (click)="startListening()" [disabled]="listening">Start Listening</button>
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="transcript" [disabled]="!listening" placeholder="Speak into the microphone">
+</div>
